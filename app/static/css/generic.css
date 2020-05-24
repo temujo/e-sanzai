@@ -1,6 +1,8 @@
 /* bootstrap navbar fg-grey:           9A9DA0 */
 /* red:                                8B2635 */
-/* red:                                0C7C59 */
+/* green-btn:                          0C7C59 */
+/* green-bg                            A3B18A */
+/* filter-bg                           DCDCDD */
 
 /* ------------------------------------------ */
 /* Basic Setup */
@@ -9,6 +11,7 @@ html, body {
     padding: 0;
     margin: 0;
     width: 100%;
+    background-color: #A3B18A;
 }
 html {
     scroll-behavior: smooth;
