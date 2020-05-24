@@ -1,0 +1,42 @@
+/* bootstrap navbar fg-grey:           9A9DA0 */
+/* red:                                8B2635 */
+/* red:                                0C7C59 */
+
+/* ------------------------------------------ */
+/* Basic Setup */
+/* ------------------------------------------ */
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+/* ------------------------------------------ */
+/* Navbar */
+/* ------------------------------------------ */
+.navbar .navbar-collapse {  /* align collapsible nav to center */
+    text-align: center;
+}
+.navbar .navbar-nav {       /* Space between nav items and navbar */
+    margin-top: 15px;
+}
+.navbar .nav-link {         /* Make nav items vertically spaced out */
+    padding: 15px 0 15px 0;
+    border-top: 1px solid #9A9DA0;
+    font-size: large;
+}
+.my-cart-btn {    
+    color: #9A9DA0;
+}
+.my-cart-btn ion-icon{
+    margin-top: 7px;
+}

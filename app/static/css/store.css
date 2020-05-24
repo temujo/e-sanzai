@@ -1,0 +1,15 @@
+/* bootstrap navbar fg-grey:           9A9DA0 */
+/* red:                                8B2635 */
+/* red:                                0C7C59 */
+
+.nav-spacer {  /* Space of navbar */
+    margin-top: 70px;
+}
+.item-count-label {
+    display: inline-block;
+}
+.filter-toggler { /* change button color and space */
+    background-color: #8B2635;
+    border-color: #8B2635;
+    float: right;
+}

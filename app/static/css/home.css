@@ -1,0 +1,29 @@
+/* bootstrap navbar fg-grey:           9A9DA0 */
+/* red:                                8B2635 */
+/* red:                                0C7C59 */
+
+/* ------------------------------------------ */
+/* HEADER */
+/* ------------------------------------------ */
+header {   /* landing */
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+header .container { /* vertically center */
+    align-self: center;
+}
+header h1 {        /* space between button and header */
+    margin-bottom: 30px;
+}
+header .btn-success { /* change button color and space */
+    background-color: #8B2635;
+    border-color: #8B2635;
+    margin-right: 10px;
+}
+header .btn-secondary {  /* change button color */
+    background-color: #0C7C59;
+    border-color: #0C7C59;
+}
