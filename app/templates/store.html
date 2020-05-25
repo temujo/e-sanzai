@@ -9,7 +9,7 @@
 <div class="nav-spacer"></div>
 <div class="container">
     <div class="store-control">
-        <h6 style="margin-bottom: 0;">100 Results</h6>
+        <h6 style="margin-bottom: 0;">16 бүтээгдэхүүн</h6>
         <button type="button" class="btn btn-success filter-toggler" data-toggle="collapse" data-target="#store-filters">Шүүлтүүр</button>
     </div>
 </div>
@@ -24,9 +24,9 @@
                         </div>
                         <div class="col-8" style="text-align: right;">
                             <select class="form-control" id="order">
-                                <option value="price-none">None</option>
-                                <option value="price-asc">Price Ascending</option>
-                                <option value="price-desc">Price Descending</option>
+                                <option value="price-none">Хэрэггүй</option>
+                                <option value="price-asc">Үнэ өсөхөөр</option>
+                                <option value="price-desc">Үнэ доошилохоор</option>
                             </select>
                         </div>
                     </div>
@@ -37,17 +37,17 @@
                             <label for="category" class="mr-sm-2">Ангилалууд:</label>
                         </div>
                         <div class="col-8">
-                            <select class="form-control selectpicker" id="category" title="Edgeerees songon uu..." data-selected-text-format="count" mobile=True multiple>
-                                <option value="all">Bugd</option>
-                                <option value="pastry">Talh boov</option>
-                                <option value="sweets">Chiher jims</option>
-                                <option value="tea">Tsai</option>
+                            <select class="form-control selectpicker" id="category" multiple data-actions-box="true" title="Сонголтуудаа хийх..." data-selected-text-format="count" multiple>
+                                <!-- <option value="All">Бүгд</option> -->
+                                <option value="pastry" style="padding-top: 15px; padding-bottom: 15px;">Талх боов</option>
+                                <option value="sweets" style="padding-top: 15px; padding-bottom: 15px;">Чихэр жимс</option>
+                                <option value="drinks" style="padding-top: 15px; padding-bottom: 15px;">Ус ундаа</option>
                             </select>
                         </div>
                     </div>
                 </div>
                 <div class="submit-group">
-                    <button type="submit" class="btn btn-success">Шүүх</button>
+                    <button type="submit" class="btn btn-success" style="width: 100%;">Хайх</button>
                 </div>
             </form>
         </div>
@@ -63,7 +63,7 @@
                 <h5 class="card-title" style="margin-bottom: .25rem;">Монгол сүү</h5>
                 <p class="card-text" style="font-size: 70%; margin-bottom: 5px;">Хуурай сүү.</p>
                 <div class="price">
-                    <p class="card-text"><span class="badge badge-danger">1500$</span></p>
+                    <p class="card-text"><span class="badge badge-danger">1500₮</span></p>
                 </div>
                 <form action="#">
                     <div class="form-group row">
@@ -86,7 +86,7 @@
                 <h5 class="card-title" style="margin-bottom: .25rem;">Монгол сүү</h5>
                 <p class="card-text" style="font-size: 70%; margin-bottom: 5px;">Хуурай сүү.</p>
                 <div class="price">
-                    <p class="card-text"><span class="badge badge-danger">1500$</span></p>
+                    <p class="card-text"><span class="badge badge-danger">1500₮</span></p>
                 </div>
                 <form action="#">
                     <div class="form-group row">
@@ -109,7 +109,467 @@
                 <h5 class="card-title" style="margin-bottom: .25rem;">Монгол сүү</h5>
                 <p class="card-text" style="font-size: 70%; margin-bottom: 5px;">Хуурай сүү.</p>
                 <div class="price">
-                    <p class="card-text"><span class="badge badge-danger">1500$</span></p>
+                    <p class="card-text"><span class="badge badge-danger">1500₮</span></p>
+                </div>
+                <form action="#">
+                    <div class="form-group row">
+                        <label for="count" class="col-6 col-form-label" style="font-size: 80%;"">Шх</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" value="1" id="count">
+                        </div>
+                    </div>
+                    <div class="cart-add">
+                        <button type="" class="btn btn-success">Сагсанд хийх</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card product">
+            <img src="{{ url_for('static', filename='img/product-suu.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body" style="padding: 0.5rem;">
+                <h5 class="card-title" style="margin-bottom: .25rem;">Монгол сүү</h5>
+                <p class="card-text" style="font-size: 70%; margin-bottom: 5px;">Хуурай сүү.</p>
+                <div class="price">
+                    <p class="card-text"><span class="badge badge-danger">1500₮</span></p>
+                </div>
+                <form action="#">
+                    <div class="form-group row">
+                        <label for="count" class="col-6 col-form-label" style="font-size: 80%;"">Шх</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" value="1" id="count">
+                        </div>
+                    </div>
+                    <div class="cart-add">
+                        <button type="" class="btn btn-success">Сагсанд хийх</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card product">
+            <img src="{{ url_for('static', filename='img/product-suu.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body" style="padding: 0.5rem;">
+                <h5 class="card-title" style="margin-bottom: .25rem;">Монгол сүү</h5>
+                <p class="card-text" style="font-size: 70%; margin-bottom: 5px;">Хуурай сүү.</p>
+                <div class="price">
+                    <p class="card-text"><span class="badge badge-danger">1500₮</span></p>
+                </div>
+                <form action="#">
+                    <div class="form-group row">
+                        <label for="count" class="col-6 col-form-label" style="font-size: 80%;"">Шх</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" value="1" id="count">
+                        </div>
+                    </div>
+                    <div class="cart-add">
+                        <button type="" class="btn btn-success">Сагсанд хийх</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card product">
+            <img src="{{ url_for('static', filename='img/product-suu.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body" style="padding: 0.5rem;">
+                <h5 class="card-title" style="margin-bottom: .25rem;">Монгол сүү</h5>
+                <p class="card-text" style="font-size: 70%; margin-bottom: 5px;">Хуурай сүү.</p>
+                <div class="price">
+                    <p class="card-text"><span class="badge badge-danger">1500₮</span></p>
+                </div>
+                <form action="#">
+                    <div class="form-group row">
+                        <label for="count" class="col-6 col-form-label" style="font-size: 80%;"">Шх</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" value="1" id="count">
+                        </div>
+                    </div>
+                    <div class="cart-add">
+                        <button type="" class="btn btn-success">Сагсанд хийх</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card product">
+            <img src="{{ url_for('static', filename='img/product-suu.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body" style="padding: 0.5rem;">
+                <h5 class="card-title" style="margin-bottom: .25rem;">Монгол сүү</h5>
+                <p class="card-text" style="font-size: 70%; margin-bottom: 5px;">Хуурай сүү.</p>
+                <div class="price">
+                    <p class="card-text"><span class="badge badge-danger">1500₮</span></p>
+                </div>
+                <form action="#">
+                    <div class="form-group row">
+                        <label for="count" class="col-6 col-form-label" style="font-size: 80%;"">Шх</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" value="1" id="count">
+                        </div>
+                    </div>
+                    <div class="cart-add">
+                        <button type="" class="btn btn-success">Сагсанд хийх</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card product">
+            <img src="{{ url_for('static', filename='img/product-suu.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body" style="padding: 0.5rem;">
+                <h5 class="card-title" style="margin-bottom: .25rem;">Монгол сүү</h5>
+                <p class="card-text" style="font-size: 70%; margin-bottom: 5px;">Хуурай сүү.</p>
+                <div class="price">
+                    <p class="card-text"><span class="badge badge-danger">1500₮</span></p>
+                </div>
+                <form action="#">
+                    <div class="form-group row">
+                        <label for="count" class="col-6 col-form-label" style="font-size: 80%;"">Шх</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" value="1" id="count">
+                        </div>
+                    </div>
+                    <div class="cart-add">
+                        <button type="" class="btn btn-success">Сагсанд хийх</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card product">
+            <img src="{{ url_for('static', filename='img/product-suu.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body" style="padding: 0.5rem;">
+                <h5 class="card-title" style="margin-bottom: .25rem;">Монгол сүү</h5>
+                <p class="card-text" style="font-size: 70%; margin-bottom: 5px;">Хуурай сүү.</p>
+                <div class="price">
+                    <p class="card-text"><span class="badge badge-danger">1500₮</span></p>
+                </div>
+                <form action="#">
+                    <div class="form-group row">
+                        <label for="count" class="col-6 col-form-label" style="font-size: 80%;"">Шх</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" value="1" id="count">
+                        </div>
+                    </div>
+                    <div class="cart-add">
+                        <button type="" class="btn btn-success">Сагсанд хийх</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card product">
+            <img src="{{ url_for('static', filename='img/product-suu.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body" style="padding: 0.5rem;">
+                <h5 class="card-title" style="margin-bottom: .25rem;">Монгол сүү</h5>
+                <p class="card-text" style="font-size: 70%; margin-bottom: 5px;">Хуурай сүү.</p>
+                <div class="price">
+                    <p class="card-text"><span class="badge badge-danger">1500₮</span></p>
+                </div>
+                <form action="#">
+                    <div class="form-group row">
+                        <label for="count" class="col-6 col-form-label" style="font-size: 80%;"">Шх</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" value="1" id="count">
+                        </div>
+                    </div>
+                    <div class="cart-add">
+                        <button type="" class="btn btn-success">Сагсанд хийх</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card product">
+            <img src="{{ url_for('static', filename='img/product-suu.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body" style="padding: 0.5rem;">
+                <h5 class="card-title" style="margin-bottom: .25rem;">Монгол сүү</h5>
+                <p class="card-text" style="font-size: 70%; margin-bottom: 5px;">Хуурай сүү.</p>
+                <div class="price">
+                    <p class="card-text"><span class="badge badge-danger">1500₮</span></p>
+                </div>
+                <form action="#">
+                    <div class="form-group row">
+                        <label for="count" class="col-6 col-form-label" style="font-size: 80%;"">Шх</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" value="1" id="count">
+                        </div>
+                    </div>
+                    <div class="cart-add">
+                        <button type="" class="btn btn-success">Сагсанд хийх</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card product">
+            <img src="{{ url_for('static', filename='img/product-suu.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body" style="padding: 0.5rem;">
+                <h5 class="card-title" style="margin-bottom: .25rem;">Монгол сүү</h5>
+                <p class="card-text" style="font-size: 70%; margin-bottom: 5px;">Хуурай сүү.</p>
+                <div class="price">
+                    <p class="card-text"><span class="badge badge-danger">1500₮</span></p>
+                </div>
+                <form action="#">
+                    <div class="form-group row">
+                        <label for="count" class="col-6 col-form-label" style="font-size: 80%;"">Шх</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" value="1" id="count">
+                        </div>
+                    </div>
+                    <div class="cart-add">
+                        <button type="" class="btn btn-success">Сагсанд хийх</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card product">
+            <img src="{{ url_for('static', filename='img/product-suu.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body" style="padding: 0.5rem;">
+                <h5 class="card-title" style="margin-bottom: .25rem;">Монгол сүү</h5>
+                <p class="card-text" style="font-size: 70%; margin-bottom: 5px;">Хуурай сүү.</p>
+                <div class="price">
+                    <p class="card-text"><span class="badge badge-danger">1500₮</span></p>
+                </div>
+                <form action="#">
+                    <div class="form-group row">
+                        <label for="count" class="col-6 col-form-label" style="font-size: 80%;"">Шх</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" value="1" id="count">
+                        </div>
+                    </div>
+                    <div class="cart-add">
+                        <button type="" class="btn btn-success">Сагсанд хийх</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card product">
+            <img src="{{ url_for('static', filename='img/product-suu.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body" style="padding: 0.5rem;">
+                <h5 class="card-title" style="margin-bottom: .25rem;">Монгол сүү</h5>
+                <p class="card-text" style="font-size: 70%; margin-bottom: 5px;">Хуурай сүү.</p>
+                <div class="price">
+                    <p class="card-text"><span class="badge badge-danger">1500₮</span></p>
+                </div>
+                <form action="#">
+                    <div class="form-group row">
+                        <label for="count" class="col-6 col-form-label" style="font-size: 80%;"">Шх</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" value="1" id="count">
+                        </div>
+                    </div>
+                    <div class="cart-add">
+                        <button type="" class="btn btn-success">Сагсанд хийх</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card product">
+            <img src="{{ url_for('static', filename='img/product-suu.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body" style="padding: 0.5rem;">
+                <h5 class="card-title" style="margin-bottom: .25rem;">Монгол сүү</h5>
+                <p class="card-text" style="font-size: 70%; margin-bottom: 5px;">Хуурай сүү.</p>
+                <div class="price">
+                    <p class="card-text"><span class="badge badge-danger">1500₮</span></p>
+                </div>
+                <form action="#">
+                    <div class="form-group row">
+                        <label for="count" class="col-6 col-form-label" style="font-size: 80%;"">Шх</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" value="1" id="count">
+                        </div>
+                    </div>
+                    <div class="cart-add">
+                        <button type="" class="btn btn-success">Сагсанд хийх</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card product">
+            <img src="{{ url_for('static', filename='img/product-suu.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body" style="padding: 0.5rem;">
+                <h5 class="card-title" style="margin-bottom: .25rem;">Монгол сүү</h5>
+                <p class="card-text" style="font-size: 70%; margin-bottom: 5px;">Хуурай сүү.</p>
+                <div class="price">
+                    <p class="card-text"><span class="badge badge-danger">1500₮</span></p>
+                </div>
+                <form action="#">
+                    <div class="form-group row">
+                        <label for="count" class="col-6 col-form-label" style="font-size: 80%;"">Шх</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" value="1" id="count">
+                        </div>
+                    </div>
+                    <div class="cart-add">
+                        <button type="" class="btn btn-success">Сагсанд хийх</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card product">
+            <img src="{{ url_for('static', filename='img/product-suu.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body" style="padding: 0.5rem;">
+                <h5 class="card-title" style="margin-bottom: .25rem;">Монгол сүү</h5>
+                <p class="card-text" style="font-size: 70%; margin-bottom: 5px;">Хуурай сүү.</p>
+                <div class="price">
+                    <p class="card-text"><span class="badge badge-danger">1500₮</span></p>
+                </div>
+                <form action="#">
+                    <div class="form-group row">
+                        <label for="count" class="col-6 col-form-label" style="font-size: 80%;"">Шх</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" value="1" id="count">
+                        </div>
+                    </div>
+                    <div class="cart-add">
+                        <button type="" class="btn btn-success">Сагсанд хийх</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card product">
+            <img src="{{ url_for('static', filename='img/product-suu.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body" style="padding: 0.5rem;">
+                <h5 class="card-title" style="margin-bottom: .25rem;">Монгол сүү</h5>
+                <p class="card-text" style="font-size: 70%; margin-bottom: 5px;">Хуурай сүү.</p>
+                <div class="price">
+                    <p class="card-text"><span class="badge badge-danger">1500₮</span></p>
+                </div>
+                <form action="#">
+                    <div class="form-group row">
+                        <label for="count" class="col-6 col-form-label" style="font-size: 80%;"">Шх</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" value="1" id="count">
+                        </div>
+                    </div>
+                    <div class="cart-add">
+                        <button type="" class="btn btn-success">Сагсанд хийх</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card product">
+            <img src="{{ url_for('static', filename='img/product-suu.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body" style="padding: 0.5rem;">
+                <h5 class="card-title" style="margin-bottom: .25rem;">Монгол сүү</h5>
+                <p class="card-text" style="font-size: 70%; margin-bottom: 5px;">Хуурай сүү.</p>
+                <div class="price">
+                    <p class="card-text"><span class="badge badge-danger">1500₮</span></p>
+                </div>
+                <form action="#">
+                    <div class="form-group row">
+                        <label for="count" class="col-6 col-form-label" style="font-size: 80%;"">Шх</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" value="1" id="count">
+                        </div>
+                    </div>
+                    <div class="cart-add">
+                        <button type="" class="btn btn-success">Сагсанд хийх</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card product">
+            <img src="{{ url_for('static', filename='img/product-suu.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body" style="padding: 0.5rem;">
+                <h5 class="card-title" style="margin-bottom: .25rem;">Монгол сүү</h5>
+                <p class="card-text" style="font-size: 70%; margin-bottom: 5px;">Хуурай сүү.</p>
+                <div class="price">
+                    <p class="card-text"><span class="badge badge-danger">1500₮</span></p>
+                </div>
+                <form action="#">
+                    <div class="form-group row">
+                        <label for="count" class="col-6 col-form-label" style="font-size: 80%;"">Шх</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" value="1" id="count">
+                        </div>
+                    </div>
+                    <div class="cart-add">
+                        <button type="" class="btn btn-success">Сагсанд хийх</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card product">
+            <img src="{{ url_for('static', filename='img/product-suu.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body" style="padding: 0.5rem;">
+                <h5 class="card-title" style="margin-bottom: .25rem;">Монгол сүү</h5>
+                <p class="card-text" style="font-size: 70%; margin-bottom: 5px;">Хуурай сүү.</p>
+                <div class="price">
+                    <p class="card-text"><span class="badge badge-danger">1500₮</span></p>
+                </div>
+                <form action="#">
+                    <div class="form-group row">
+                        <label for="count" class="col-6 col-form-label" style="font-size: 80%;"">Шх</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" value="1" id="count">
+                        </div>
+                    </div>
+                    <div class="cart-add">
+                        <button type="" class="btn btn-success">Сагсанд хийх</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card product">
+            <img src="{{ url_for('static', filename='img/product-suu.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body" style="padding: 0.5rem;">
+                <h5 class="card-title" style="margin-bottom: .25rem;">Монгол сүү</h5>
+                <p class="card-text" style="font-size: 70%; margin-bottom: 5px;">Хуурай сүү.</p>
+                <div class="price">
+                    <p class="card-text"><span class="badge badge-danger">1500₮</span></p>
+                </div>
+                <form action="#">
+                    <div class="form-group row">
+                        <label for="count" class="col-6 col-form-label" style="font-size: 80%;"">Шх</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" value="1" id="count">
+                        </div>
+                    </div>
+                    <div class="cart-add">
+                        <button type="" class="btn btn-success">Сагсанд хийх</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card product">
+            <img src="{{ url_for('static', filename='img/product-suu.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body" style="padding: 0.5rem;">
+                <h5 class="card-title" style="margin-bottom: .25rem;">Монгол сүү</h5>
+                <p class="card-text" style="font-size: 70%; margin-bottom: 5px;">Хуурай сүү.</p>
+                <div class="price">
+                    <p class="card-text"><span class="badge badge-danger">1500₮</span></p>
                 </div>
                 <form action="#">
                     <div class="form-group row">
