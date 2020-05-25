@@ -7,6 +7,9 @@
 .nav-spacer {  /* Space of navbar */
     margin-top: 70px;
 }
+/* ------------------------------------------ */
+/* Store control */
+/* ------------------------------------------ */
 .item-count-label {
     display: inline-block;
 }
@@ -28,7 +31,24 @@
 .submit-group {
     text-align: center;
 }
-
-.category {
-    font-size: 80%;
+/* ------------------------------------------ */
+/* Store products */
+/* ------------------------------------------ */
+.product {
+    background-color:#DCDCDD;
+    border-color: #DCDCDD;
+}
+.cart-add {
+    text-align: right;
+}
+.cart-add button {
+    background-color: #0C7C59;
+}
+.price {
+    text-align: center;
+    font-size: 125%;
+    margin-bottom: 5px;
+}
+.badge-danger {
+    background-color: #8B2635;
 }
