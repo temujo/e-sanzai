@@ -4,9 +4,6 @@
 /* green-bg                            A3B18A */
 /* filter-bg                           DCDCDD */
 
-.nav-spacer {  /* Space of navbar */
-    margin-top: 70px;
-}
 /* ------------------------------------------ */
 /* Store control */
 /* ------------------------------------------ */
@@ -14,8 +11,8 @@
     display: inline-block;
 }
 .filter-toggler { /* change button color and space */
-    background-color: #8B2635;
-    border-color: #8B2635;
+    background-color: #973847;
+    border-color: #973847;
 }
 .store-control {
     display: flex;
@@ -26,7 +23,7 @@
     margin-top: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #DCDCDD;
+    background-color: #DAE0F2;
 }
 .submit-group {
     text-align: center;
@@ -35,14 +32,16 @@
 /* Store products */
 /* ------------------------------------------ */
 .product {
-    background-color:#DCDCDD;
-    border-color: #DCDCDD;
+    background-color:#DAE0F2;
+    border: 5px solid #DAE0F2;
+    box-shadow: 10px 10px 10px #888888;
 }
 .cart-add {
     text-align: right;
 }
 .cart-add button {
-    background-color: #0C7C59;
+    background-color: #46AF60;
+    border-color: #46AF60;
 }
 .price {
     text-align: center;
@@ -50,5 +49,5 @@
     margin-bottom: 5px;
 }
 .badge-danger {
-    background-color: #8B2635;
+    background-color: #28536B;
 }

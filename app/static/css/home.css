@@ -21,8 +21,8 @@ header h1 {        /* space between button and header */
     margin-bottom: 30px;
 }
 header .btn-success { /* change button color and space */
-    background-color: #8B2635;
-    border-color: #8B2635;
+    background-color: #973847;
+    border-color: #973847;
     margin-right: 10px;
 }
 header .btn-secondary {  /* change button color */

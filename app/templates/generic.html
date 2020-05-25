@@ -28,7 +28,7 @@
             </a>
 
             <!-- Cart -->
-            <a class="my-cart-btn" type="button" href="#">
+            <a class="my-cart-btn" type="button" href="{{ url_for('cart') }}">
                 <ion-icon name="cart-outline" size="large"></ion-icon>
             </a>
 
@@ -53,11 +53,11 @@
     {% block content %}{% endblock %}
 
     <!-- Footer -->
-    <footer class="py-4 bg-dark text-white-50">
+    <footer class="py-4 mt-auto bg-dark text-white-50">
 
         <!-- Copyright -->
         <div class="container text-center">
-            © 2020 Copyright: Temuujin Natsagnyam
+            <small>© 2020 Copyright: Temuujin Natsagnyam</small>
         </div>
         <!-- Copyright -->
   
