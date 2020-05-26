@@ -11,7 +11,8 @@ html, body {
     padding: 0;
     margin: 0;
     width: 100%;
-    background-color: #F4F9E9;
+    background-color: #EDE7E3;
+    color: #303030;
 }
 html {
     scroll-behavior: smooth;
@@ -25,27 +26,67 @@ body {
     display: flex;
     flex-direction: column;
 }
-.nav-spacer {  /* Space of navbar */
-    margin-top: 70px;
+.nav-spacer {  /* Hack to not let elemtns go under fixed-top navbar */
+    margin-top: 60px;
+}
+.page-title {
+    color: #303030;
+    display: inline-block;
+}
+.page-title:after { /* Page title underline */
+    display: block;
+    height: 4px;
+    background-color: #206048;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 5px;
 }
 
 /* ------------------------------------------ */
 /* Navbar */
 /* ------------------------------------------ */
-.navbar .navbar-collapse {  /* align collapsible nav to center */
+.navbar-custom {
+    background-color: #206048;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.8);
+}
+.navbar-custom .navbar-nav .nav-link:first-child {
+    margin-top: 10px;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+
+.navbar-custom .navbar-collapse {  /* align collapsible nav to center */
     text-align: center;
 }
-.navbar .navbar-nav {       /* Space between nav items and navbar */
-    margin-top: 15px;
-}
-.navbar .nav-link {         /* Make nav items vertically spaced out */
+.navbar-custom .nav-link {         /* Make nav items vertically spaced out */
     padding: 15px 0 15px 0;
-    border-top: 1px solid #9A9DA0;
     font-size: large;
 }
-.my-cart-btn {    
-    color: #9A9DA0;
+.nav-link:after {                  /* Little knob under nav links to give user gauge on where to press */
+    display: block;
+    height: 2px;
+    background-color: white;
+    content: " ";
+    width: 20px;
+    margin: 0 auto;
+    margin-top: 15px;
 }
-.my-cart-btn ion-icon{
-    margin-top: 7px;
+.navbar-custom .navbar-brand {     /* Weird hack to make logo vertically even with basket */
+    padding-top: 0;
+    padding-bottom: 0.4rem;
+}
+
+.my-cart-btn {    
+    color: white;
 }

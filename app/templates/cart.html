@@ -7,8 +7,7 @@
 {% block content %}
 <div class="nav-spacer"></div>
 <div class="container">
-    <h1 id="cart-title">Сагс</h1>
-    
+    <h1 class="page-title" id="page--title">Сагс</h1>
     <div class="shopping-cart">
         <div class="column-labels">
             <label class="product-image">Image</label>
@@ -25,7 +24,7 @@
             </div>
             <div class="product-details">
                 <div class="product-title"><h5>Монгол сүү</h5></div>
-                <p class="product-description" style="font-size: 80%;"> Хуурай сүү.</p>
+                <p class="product-description">Hiimiin bodistoi huurai сүү.</p>
             </div>
             <div class="product-price">1500</div>
             <div class="product-quantity">
@@ -61,15 +60,18 @@
 
         <div class="totals">
             <div class="totals-item">
-                <label>Үндсэн үнэ</label>
+                <!-- <label>Үндсэн үнэ</label> -->
+                <label>Subtotal</label>
                 <div class="totals-value" id="cart-subtotal">0</div>
             </div>
             <div class="totals-item">
-                <label>Хүргэлтийн үнэ</label>
+                <!-- <label>Хүргэлтийн үнэ</label> -->
+                <label>Delivery charge</label>
                 <div class="totals-value" id="cart-shipping">0</div>
             </div>
             <div class="totals-item totals-item-total">
-                <label>Нийт үнэ</label>
+                <!-- <label>Нийт үнэ</label> -->
+                <label>Grand Total</label>
                 <div class="totals-value" id="cart-total">0</div>
             </div>
             <div class="wrapper" style="display: flex;">

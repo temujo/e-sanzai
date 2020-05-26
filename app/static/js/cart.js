@@ -41,7 +41,7 @@ $(document).ready(function() {
         $('#cart-subtotal').html(subtotal);
         $('#cart-shipping').html(shipping);
         $('#cart-total').html(total);
-        $('#cart-title').html("Сагс <small>(" + item_count + ")</small>");
+        $('#page--title').html("Сагс <small>(" + item_count + ")</small>");
         if(total == 0){
             $('.order-btn').fadeOut(fadeTime);
         }else{

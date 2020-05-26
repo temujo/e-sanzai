@@ -8,11 +8,13 @@
 /* Store control */
 /* ------------------------------------------ */
 .item-count-label {
-    display: inline-block;
+    margin-bottom: 0;
+    color: #303030;
 }
-.filter-toggler { /* change button color and space */
-    background-color: #973847;
-    border-color: #973847;
+.custom-filter-toggler { /* change button color and space */
+    background-color: #BE6447;
+    border-color: #BE6447;
+    color: white;
 }
 .store-control {
     display: flex;
@@ -32,22 +34,36 @@
 /* Store products */
 /* ------------------------------------------ */
 .product {
-    background-color:#DAE0F2;
-    border: 5px solid #DAE0F2;
-    box-shadow: 10px 10px 10px #888888;
+    background-color: white;
 }
-.cart-add {
-    text-align: right;
+.custom-card-body {
+    padding: 0.5rem;
 }
-.cart-add button {
-    background-color: #46AF60;
-    border-color: #46AF60;
+.custom-card-title {
+    margin-bottom: .25rem;
+    font-size: 18px;
+    font-weight: 500;
+    color: #303030;
 }
-.price {
-    text-align: center;
-    font-size: 125%;
+.custom-card-description {
+    font-size: 14px; 
+    font-style: italic;
     margin-bottom: 5px;
+    color: #606060;
 }
+.custom-price {
+    font-size: 22px;
+    font-weight: 500;
+    color: #303030;
+}
+.custom-add-btn {
+    color: white;
+    margin-top: 3px;
+    width: 100%;
+    background-color: #3c69a6;
+    border-color: #3c69a6;
+}
+
 .badge-danger {
     background-color: #28536B;
 }

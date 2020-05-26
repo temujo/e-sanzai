@@ -13,7 +13,7 @@
   .product-price {
     float: left;
     width: 12%;
-    color: #8B2635;
+    color: #303030;
     font-weight: 500;
   }
    
@@ -31,7 +31,7 @@
     float: left;
     width: 12%;
     text-align: right;
-    color: #8B2635;
+    color: #303030;
     font-weight: 500;
   }
    
@@ -65,7 +65,7 @@
    
   /* Body/Header stuff */   
   label {
-    color: #8B2635;
+    color: #303030;
   }
    
   .shopping-cart {
@@ -84,7 +84,7 @@
    
   /* Product entries */
   .product {
-    background-color: #DAE0F2;
+    background-color: white;
     margin-bottom: 20px;
     padding: 10px;
     border-bottom: 1px solid #eee;
@@ -99,10 +99,16 @@
   }
   .product .product-details .product-title {
     margin-right: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #303030;
   }
   .product .product-details .product-description {
     margin: 5px 20px 5px 0;
     line-height: 1.4em;
+    font-size: 14px; 
+    font-style: italic;
+    color: #606060;
   }
   .product .product-quantity input {
     width: 40px;
@@ -131,6 +137,7 @@
     clear: both;
     width: 79%;
     text-align: right;
+    font-weight: 500;
   }
   .totals .totals-item .totals-value {
     float: right;
@@ -138,15 +145,8 @@
     text-align: right;
   }
    
-  .checkout {
-    float: right;
-    border: 0;
-    margin-top: 20px;
-    padding: 6px 25px;
-    background-color: #46AF60;
-    color: #fff;
-    font-size: 25px;
-    border-radius: 3px;
+  .order-btn {
+    background-color: #199A4B;
   }
    
   .checkout:hover {
