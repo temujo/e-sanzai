@@ -25,7 +25,11 @@
     margin-top: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #DAE0F2;
+    background-color: #DFD4CD;
+}
+.filter-label {
+    font-weight: 500;
+    font-size: 18px;
 }
 .submit-group {
     text-align: center;

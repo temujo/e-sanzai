@@ -11,7 +11,9 @@
     <h1 class="page-title">Дэлгүүр</h1>
     <div class="store-control">
         <h6 class="item-count-label">16 бүтээгдэхүүн</h6>
-        <button type="button" class="btn custom-filter-toggler" data-toggle="collapse" data-target="#store-filters">Шүүлтүүр</button>
+        <button type="button" class="btn custom-filter-toggler" data-toggle="collapse" data-target="#store-filters">
+            Шүүлтүүр&nbsp;<i class="fas fa-filter" style="color: white;"></i>
+        </button>
     </div>
 </div>
 <div class="container-fluid"></div>
@@ -21,7 +23,7 @@
                 <div class="form-group">
                     <div class="form-row">                    
                         <div class="col-4">
-                            <label for="order" class="mr-sm-2">Дараалал:</label>
+                            <label for="order" class="mr-sm-2 filter-label">Дараалал:</label>
                         </div>
                         <div class="col-8" style="text-align: right;">
                             <select class="form-control" id="order">
@@ -35,7 +37,7 @@
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-4">
-                            <label for="category" class="mr-sm-2">Ангилалууд:</label>
+                            <label for="category" class="mr-sm-2 filter-label">Ангилалууд:</label>
                         </div>
                         <div class="col-8">
                             <select class="form-control selectpicker" id="category" multiple data-actions-box="true" title="Сонголтуудаа хийх..." data-selected-text-format="count" multiple>
@@ -55,7 +57,7 @@
 </div>
 
 <div class="container mt-3">
-    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+    <div class="row row-cols-2 row-cols-md-3 row-cols-xl-4">
         <div class="col mb-4">
             <div class="card product">
             <img src="{{ url_for('static', filename='img/product-suu.jpg') }}" class="card-img-top" alt="...">
@@ -64,12 +66,14 @@
                 <p class="card-text custom-card-description">Hiimiin bodistoi huurai сүү.</p>
                 <form action="#">
                     <div class="row">
-                        <label for="count" class="col-6 custom-price">1500₮</label>
-                        <div class="col-6">
+                        <label for="count" class="col-7 custom-price">1500₮</label>
+                        <div class="col-5">
                             <input class="form-control" type="number" value="1" id="count">
                         </div>
                     </div>
-                    <button type="submit" class="btn custom-add-btn">Сагсанд хийх</button>
+                    <button type="submit" class="btn custom-add-btn">
+                        <i class="fas fa-cart-plus"></i>&nbsp;Сагсанд хийх
+                    </button>
                 </form>
             </div>
             </div>
@@ -82,12 +86,14 @@
                 <p class="card-text custom-card-description">Hiimiin bodistoi huurai сүү.</p>
                 <form action="#">
                     <div class="row">
-                        <label for="count" class="col-6 custom-price">1500₮</label>
-                        <div class="col-6">
+                        <label for="count" class="col-7 custom-price">1500₮</label>
+                        <div class="col-5">
                             <input class="form-control" type="number" value="1" id="count">
                         </div>
                     </div>
-                    <button type="submit" class="btn custom-add-btn">Сагсанд хийх</button>
+                    <button type="submit" class="btn custom-add-btn">
+                        <i class="fas fa-cart-plus"></i>&nbsp;Сагсанд хийх
+                    </button>
                 </form>
             </div>
             </div>
@@ -100,12 +106,14 @@
                 <p class="card-text custom-card-description">Hiimiin bodistoi huurai сүү.</p>
                 <form action="#">
                     <div class="row">
-                        <label for="count" class="col-6 custom-price">1500₮</label>
-                        <div class="col-6">
+                        <label for="count" class="col-7 custom-price">1500₮</label>
+                        <div class="col-5">
                             <input class="form-control" type="number" value="1" id="count">
                         </div>
                     </div>
-                    <button type="submit" class="btn custom-add-btn">Сагсанд хийх</button>
+                    <button type="submit" class="btn custom-add-btn">
+                        <i class="fas fa-cart-plus"></i>&nbsp;Сагсанд хийх
+                    </button>
                 </form>
             </div>
             </div>
@@ -118,12 +126,14 @@
                 <p class="card-text custom-card-description">Hiimiin bodistoi huurai сүү.</p>
                 <form action="#">
                     <div class="row">
-                        <label for="count" class="col-6 custom-price">1500₮</label>
-                        <div class="col-6">
+                        <label for="count" class="col-7 custom-price">1500₮</label>
+                        <div class="col-5">
                             <input class="form-control" type="number" value="1" id="count">
                         </div>
                     </div>
-                    <button type="submit" class="btn custom-add-btn">Сагсанд хийх</button>
+                    <button type="submit" class="btn custom-add-btn">
+                        <i class="fas fa-cart-plus"></i>&nbsp;Сагсанд хийх
+                    </button>
                 </form>
             </div>
             </div>
@@ -136,12 +146,14 @@
                 <p class="card-text custom-card-description">Hiimiin bodistoi huurai сүү.</p>
                 <form action="#">
                     <div class="row">
-                        <label for="count" class="col-6 custom-price">1500₮</label>
-                        <div class="col-6">
+                        <label for="count" class="col-7 custom-price">1500₮</label>
+                        <div class="col-5">
                             <input class="form-control" type="number" value="1" id="count">
                         </div>
                     </div>
-                    <button type="submit" class="btn custom-add-btn">Сагсанд хийх</button>
+                    <button type="submit" class="btn custom-add-btn">
+                        <i class="fas fa-cart-plus"></i>&nbsp;Сагсанд хийх
+                    </button>
                 </form>
             </div>
             </div>

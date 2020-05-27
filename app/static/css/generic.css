@@ -86,6 +86,10 @@ body {
     padding-top: 0;
     padding-bottom: 0.4rem;
 }
+ion-icon {
+    color: white;
+    font-size: 24px;
+}
 
 .my-cart-btn {    
     color: white;

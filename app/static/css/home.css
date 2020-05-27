@@ -9,7 +9,7 @@
 /* ------------------------------------------ */
 header {   /* landing */
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../img/hero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("../img/hero.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -21,11 +21,11 @@ header h1 {        /* space between button and header */
     margin-bottom: 30px;
 }
 header .btn-success { /* change button color and space */
-    background-color: #973847;
-    border-color: #973847;
+    background-color: #297A5C;
+    border-color: #297A5C;
     margin-right: 10px;
 }
 header .btn-secondary {  /* change button color */
-    background-color: #0C7C59;
-    border-color: #0C7C59;
+    background-color: #BE6447;
+    border-color: #BE6447;
 }
