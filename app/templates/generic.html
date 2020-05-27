@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Sanzai</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500&display=swap" rel="stylesheet">
@@ -11,6 +10,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/597b438e2a.js" crossorigin="anonymous"></script>
+
+    {% if title %}
+        <title>{{ title }} - Санзай</title>
+    {% else %}
+        <title>Санзай</title>
+    {% endif %}
     
     <link rel="stylesheet" href="{{ url_for('static', filename='css/generic.css') }}">
     {% block stylesheets %}{% endblock %}
@@ -40,7 +45,7 @@
                         <a class="nav-link" href="{{ url_for('store') }}"><i class="fas fa-store"></i>&nbsp;ДЭЛГҮҮР</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-user"></i>&nbsp;БҮРТГЭЛ</a>
+                        <a class="nav-link" href="{{ url_for('login') }}"><i class="fas fa-user"></i>&nbsp;БҮРТГЭЛ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fas fa-book-open"></i>&nbsp;БИДНИЙ ТУХАЙ</a>
@@ -50,6 +55,16 @@
 
         </div>  
     </nav>
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
 
     {% block content %}{% endblock %}
 
